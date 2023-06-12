@@ -1,0 +1,30 @@
+.container {
+    display: inline-block;
+    width: 430px;
+    background-color: deeppink;
+}
+
+.container div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: aliceblue;
+    text-align: center;
+    line-height: 100px;
+
+    float: left;
+}
+
+.container div:nth-child(-n + 12) {
+    margin-bottom: 10px;
+}
+
+.container div:not(:nth-child(4n)) {
+    margin-right: 10px;
+}
+
+/* .container::after {
+    content: "";
+    display: block;
+    clear: left;
+} */
